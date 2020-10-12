@@ -1,0 +1,103 @@
+/***********************/
+/******  CONTACTE ******/
+/***********************/
+.contact {
+  padding-bottom: 150px;
+  max-width: 100%;
+  height:auto;
+  position: relative;
+  display: flex;
+  margin-left: 380px;
+  float:left;
+  z-index: 1;
+  section {
+    padding: 10% 15% 0;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+      font-size: 30px !important;
+      color: $accent;
+      font-weight: bold;
+      line-height: 60px;
+    }
+    h4 {
+      font-size: 28px;
+      color: $accent;
+      font-weight: bold;
+      line-height: 60px;
+    }
+    .square {
+      margin-bottom: 30px;
+      padding: 30px;
+      background-color: $bg-sidebar;
+      width: 100%;
+      height: auto;
+      .icon {
+        font-size: 60px;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    .services {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+.contact-form {
+  padding: 45px 65px 45px;
+  background-color: $accent;
+  color: $color-sidebar;
+  font-size: 14px;
+  width: 80%;
+}
+
+.touch {
+  padding-left: 0;
+}
+
+.btn-form {
+  margin-top: 40px;
+  display: inline-block;
+  border: 2px solid;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: transparent;
+  color: $color-sidebar;
+  font-weight: 700;
+  width: 100%;
+  letter-spacing: 8px;
+  transition: opacity .3s ease;
+  border-radius: 0;
+}
+
+.btn-form:hover {
+  background-color: $accent2;
+  transition: opacity .3s ease;
+  color: $color-sidebar;
+}
+
+input[type=text], .contact-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid $color-sidebar;
+  background-color: $accent;
+  color: $color-sidebar;
+  font-size: 14px;
+}
+
+textarea:focus, input[type=text]:focus {
+  outline: none;
+}
+
+.contact-form label{
+  padding-top: 20px;
+}

@@ -1,0 +1,84 @@
+/***********************/
+/*****  TIMELINE   *****/
+/***********************/
+@mixin timeline-container {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -37px;
+  top: 8px;
+  border-radius: 90%;
+  background-color: $accent;
+  -webkit-transition: all 3s;
+  transition: .3s;
+}
+
+.timeline-item:not(:last-child):before  {
+  content: '';
+  width: 3px;
+  height: calc(100% - 20px);
+  position: absolute;
+  background-color: $accent;
+  left: -30px;
+  top: 51px;
+}
+  
+.timeline-item {
+  margin: 0 0 42px 60px;
+  position: relative;
+  list-style: none;
+  transition: .3s;
+  span.timeline-dot {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 90%;
+    border: 3px solid $accent;
+    position: absolute;
+    left: -45px;
+    z-index: 1;
+    transition: .3s;
+  }
+  .timeline-container:before {
+    @include timeline-container;
+    opacity: 0;
+  }
+  .timeline-container:hover:before {
+    @include timeline-container;
+    opacity: 1;
+  }
+  .timeline-item-content {
+    line-height: 160%;
+    text-align: left;
+    margin-left: 30px;
+    -webkit-transition: all 3s;
+    transition: .3s;
+  }
+  .timeline-item-content:hover {
+    -webkit-transition: all 3s;
+    transition: .3s;
+  }
+  .timeline-item-date {
+    position: absolute;
+    left: -55px;
+    top: 1px;
+    transition: .3s;
+    color: $accent;
+    font-weight: 700;
+  }
+  .timeline-container:hover{
+    color:white;
+  }
+}
+  
+
+/***********************/
+/***   CARTA PRES.   ***/
+/***********************/
+.cover-letter p:not(:last-child), .touch p:not(:last-child) {
+  margin-bottom: 40px;
+}
+  

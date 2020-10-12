@@ -1,0 +1,173 @@
+/***********************/
+/*****  GENERAL   ******/
+/***********************/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-family-poppins-sans-serif;
+  background-color: $cv-bg;
+  color: $cv-font;
+}
+.row {
+  margin: 0;
+}
+nav {
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-link {
+  color: $accent !important;
+  transition: .3s;
+  padding-left: 50px !important;
+}
+.nav-link:hover {
+  color: $accent2 !important;
+  transition: .3s;
+}
+.nav-bg {
+  background-color: $bg-sidebar;
+}
+.navbar-toggler {
+  border-color: $accent !important;
+  transition: .3s;
+}
+.navbar-toggler:hover {
+  background-color: $color-intro;
+  transition: .3s;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+#nav-resp {
+  display: none;
+}
+.btn-accent {
+  border: 2px solid;
+  border-color: $accent;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 15px;
+  color: $color-sidebar;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.btn-accent:hover {
+  background-color: $accent;
+  color: $color-sidebar;
+}
+.information-container {
+  h4 {
+    font-size: 30px;
+    color: $accent;
+    font-weight: bold;
+    line-height: 60px;
+  }
+  .first {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .second {
+    line-height: 30px;
+  }
+  .buttons {
+    margin-top: 60px;
+  }
+}
+
+/***********************/
+/*****  SIDEBAR   ******/
+/***********************/
+.sidebar {
+  z-index: 1;
+  height:100vh;
+  width: 380px; 
+  padding: 3px; 
+  background:$bg-sidebar;
+  position: fixed;
+  overflow-x: hidden;
+  .sidebar-content {
+    .my-info {
+      padding-top: 110px;
+      padding-left: 70px;
+      color: $color-sidebar;
+    }
+    .text-wrap {
+      margin-bottom: 30px;
+      .sidebar-item {
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: 'uppercase';
+        color: $accent;
+      }
+    }
+  }
+}
+
+
+/***********************/
+/****  INTRODUCCIO   ***/
+/***********************/
+.intro {
+  float:left;
+  z-index: 1;
+  width: 510px; 
+  height:100vh;
+  background:$color-sidebar;
+  position: relative;
+  display: flex;
+  margin-left: 380px;
+  section {
+    padding: 0 10% 0 12%;
+    margin-top: auto;
+    margin-bottom: auto;
+    .intro-intro {
+      font-size: 28px;
+      color: $color-intro;
+      line-height: 90px;
+    }
+    .intro-name {
+      color: $accent;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      h1 {
+        font-size: 100px;
+        font-weight: 800;
+        line-height: 94px;
+      }
+    }
+    .intro-text p {
+      line-height: 30px;
+      margin-bottom: 100px;
+    }
+    .intro-rrss {
+      a {
+        margin-right: 35px;
+        font-size: 12px;
+        line-height: 30px;
+        text-transform: 'uppercase';
+        color: $color-intro;
+        letter-spacing: 5px;
+      }
+      a:hover {
+        cursor: pointer;
+        color: gray;
+      }
+    }
+  }
+}
+
+
+/***********************/
+/******  IMATGE   ******/
+/***********************/
+.photo {
+  background-image: url("../../assets/images/desk.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100% - 890px);
+  height:100vh;
+  position: absolute;
+}

@@ -1,0 +1,83 @@
+/***********************/
+/***  PROGRESS BAR   ***/
+/***********************/
+@mixin progressBar($percent, $str) {
+  width: $percent; 
+  animation: $str 6s;
+}
+
+.progress-item {
+  list-style: none;
+  margin-top: 30px;
+  .container {
+    padding: 0;
+    h5 {
+      padding-left: 20px;
+      padding-top: 5px;
+      color: $accent;
+    }
+  }
+}
+.progress-div {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);  
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar {
+  color: $color-intro;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: $accent;
+  height: 40px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+.progress-moved {
+  background-color: $progress-bar-bg;
+  .progress-bar1, .progress-bar5 {
+    @include progressBar(80%, 'progressAnimation1');
+  }
+  .progress-bar2, .progress-bar8 {
+    @include progressBar(70%, 'progressAnimation2');
+  }
+  .progress-bar3 {
+    @include progressBar(85%, 'progressAnimation3');
+  }
+  .progress-bar4 {
+    @include progressBar(50%, 'progressAnimation4');
+  }
+  .progress-bar6 {
+    @include progressBar(60%, 'progressAnimation5');
+  }
+  .progress-bar7 {
+    @include progressBar(40%, 'progressAnimation6');
+  }
+}
+@keyframes progressAnimation1 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 80%; background-color: $accent; }
+}
+@keyframes progressAnimation2 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 70%; background-color: $accent; }
+}
+@keyframes progressAnimation3 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 85%; background-color: $accent; }
+}
+@keyframes progressAnimation4 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 50%; background-color: $accent; }
+}
+@keyframes progressAnimation5 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 60%; background-color: $accent; }
+}
+@keyframes progressAnimation6 {
+  0%   { width: 5%; background-color: $accent3;}
+  100% { width: 40%; background-color: $accent; }
+}

@@ -1,0 +1,79 @@
+/***********************/
+/****  RESPONSIVE   ****/
+/***********************/
+@media screen and (max-width: $break-extra-large) {
+  #nav-resp {
+    display: none;
+  }
+  .types section, .contact section, .skills-cont section {
+    padding: 10% 8% 0;
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  #nav-resp {
+    display: none;
+  }
+  .sidebar {
+    width:320px; 
+  }
+  .intro {
+    margin-left: 320px;
+  }
+  .photo {
+    width: calc(100% - 830px);
+  }
+  .types, .contact, .skills-cont {
+    margin-left: 320px;
+    section {
+      padding: 10% 0 0;
+    }
+  }
+  .services {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  #skills, #exp {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .touch {
+    padding-bottom: 50px;
+  }
+  .contact {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  #nav-resp {
+    display: block;
+  }
+  .sidebar {
+    display:none;
+  }
+  .intro {
+    margin-left: 0;
+  }
+  .photo {
+    width: calc(100% - 510px);
+  }
+  .types, .contact, .skills-cont {
+    margin-left: 0;
+    section {
+      padding: 10% 0 0;
+    }
+  }
+  .experience {
+    padding-bottom: 30px;
+  }
+  .services {
+    padding-top: 40px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
